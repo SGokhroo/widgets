@@ -1,6 +1,6 @@
 <body><script type="text/javascript">
     function prepareURL() {
-        var minDates = new Date().toLocaleDateString().substring(0, 10).replaceAll("/","");
+        var minDates = new Date().toLocaleDateString("fr-CA").substring(0, 10).replaceAll("-","");
         var DateString = minDates.concat("/").concat(minDates);
         var CreateGCalString = "https://calendar.google.com/calendar/u/0/embed?showNav=0&showPrint=0&showCalendars=0&mode=DAY&wkst=2&src=Y192bDBmdmFsZzdpOHAwdmo2dTZtNW45NmU4Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&dates=".concat(DateString);
         var ifrm = document.createElement("iframe");
